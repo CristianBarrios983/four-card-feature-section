@@ -1,0 +1,150 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+}
+
+header{
+    text-align: center;
+    padding: 0 2rem;
+}
+
+h1{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    display: block;
+    font-size: 1.6rem;
+}
+
+.title__thin{
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+}
+
+.title__bold{
+    font-weight:600;
+    color: var(--Very-Dark-Blue);
+}
+
+.paragraph{
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 5rem 0;
+}
+
+.card{
+    width: 320px;
+    border-radius: 5px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px hsla(234, 12%, 34%, 0.3);
+}
+
+.card--1{
+    border-top: 5px solid var(--Cyan);
+}
+
+.card--2{
+    border-top: 5px solid var(--Red);
+}
+
+.card--3{
+    border-top: 5px solid var(--Orange);
+}
+
+.card--4{
+    border-top: 5px solid var(--Blue);
+}
+
+.card__title{
+    font-weight: 600;
+    margin-bottom: .4rem;
+}
+
+.card__paragraph{
+    font-weight: 200;
+    margin-bottom: 2.4rem;
+    color: var(--Grayish-Blue);
+}
+
+@media (min-width:900px){
+    header{
+        padding: 0 10rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        width: 1025px;
+        height: 500px;
+        position: relative;
+    }
+    .card{
+        position: absolute;
+    }
+    .card--1{
+        right: 0;
+    }
+    .card--2{
+        top: 0;
+    }
+    .card--3{
+        bottom: 0;
+    }
+    .card--4{
+        left: 0;
+    }
+}
+
+@media (min-width:1250px){
+    header{
+        padding: 0 25rem;
+    }
+    h1{
+        margin-top: 4.5rem;
+    }
+    .cards{
+        margin: 4rem 0 5rem 0;
+    }
+    .title{
+        font-size: 2.2rem;
+    }
+    .paragraph{
+        text-align: center;
+    }
+    .card{
+        padding: 1.5rem 1.7rem;
+    }
+}
