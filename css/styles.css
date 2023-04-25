@@ -86,12 +86,19 @@ h1{
 .card__title{
     font-weight: 600;
     margin-bottom: .4rem;
+    color: var(--Very-Dark-Blue);
+    font-size: 1.2rem;
 }
 
 .card__paragraph{
     font-weight: 200;
     margin-bottom: 2.4rem;
     color: var(--Grayish-Blue);
+}
+
+.img-content{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 @media (min-width:900px){
